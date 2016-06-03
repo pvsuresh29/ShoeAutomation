@@ -7,8 +7,6 @@ import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
 import com.discount.automation.homepage.data.HomePageData;
 import com.discount.automation.homepage.pages.HomePage;
-import com.discount.utils.Driver;
-import com.discount.utils.EnvUrl;
 import com.discount.utils.Hooks;
 
 public class CheckoutWithCCSteps {
