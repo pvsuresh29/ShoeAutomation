@@ -20,7 +20,7 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickShopLink(){
+	public static void clickShopLink(){
 		shopVehicleButton.click();
 	}
 	
