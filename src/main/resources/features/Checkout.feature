@@ -18,5 +18,5 @@ Scenario Outline: Checkout with Credit card
    
 
 Examples:
-     |Year|Make     |Model|Trim|Assembly													 |YearDropDown|MakeDropdown|ModelDropdow|TrimDropdown|AssemblyDropdown|num1|num2|num3|num4|num5|
-     |2015|Audi     |RS7  |4.0 |F 275 /35 R20 XL - R 275 /35 R20 XL|Year        |Make        |Model       |Trim        |Assembly        |1   |2   |3   |4   |5   |
+     |Year|Make  |Model|Trim      |Assembly			 |YearDropDown|MakeDropdown|ModelDropdow|TrimDropdown|AssemblyDropdown|num1|num2|num3|num4|num5|
+     |2016|Alpine|A110 |ESV Sport |255 /50 R18 XL|Year        |Make        |Model       |Trim        |Assembly        |1   |2   |3   |4   |5   |
