@@ -12,25 +12,16 @@ import cucumber.api.java.Before;
 public class Hooks {
 	
 	
-	private static WebDriver driver;
-	public Driver initDriver;
-	public EnvUrl envURL;
-	public static String urlToTest;
+	public static Driver initDriver=new Driver();
+	private static WebDriver driver= initDriver.driverInit();
+	public static EnvUrl envURL= new EnvUrl();
+	public static String urlToTest= envURL.getEnvUrl();
 	
-	
-	
-	 public Hooks()
-	    {
-		 initDriver = new Driver();
-		 driver = initDriver.driverInit();
-		 envURL = new EnvUrl();
-		 urlToTest = envURL.getEnvUrl();
-		 
-	    }
 	 
 	 
 	 public static WebDriver getDriver()
 	    {
+		 	
 	    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    	driver.get(urlToTest);
 	        return driver;
@@ -44,8 +35,6 @@ public class Hooks {
 
 	    public void openBrowser() throws MalformedURLException 
 	    {
-
-	        System.out.println("Called openBrowser");
 
 	    	//driver = initDriver.driverInit();
 	    	try
