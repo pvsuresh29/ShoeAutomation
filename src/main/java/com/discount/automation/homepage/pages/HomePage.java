@@ -12,7 +12,7 @@ public class HomePage {
 	@FindBy(className="fitment-component__select-box")
 	public static WebElement fitmentComponent;
 	
-	@FindBy(xpath="/html/body/main/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div/form/div[6]/button")
+	@FindBy(className="fitmentSendButton")
 	public static WebElement shopVehicleButton;
 	
 	public HomePage(WebDriver driver){
