@@ -15,7 +15,9 @@ Scenario Outline: Checkout with Credit card
     And  I select "<Trim>" from "<TrimDropdown>" which is dropdown "<num4>"
    # And  I select "<Assembly>" from "<AssemblyDropdown>" which is dropdown "<num5>"
     And  I click the Shop for my vehicle Button
-    When I get a popup for fitment page and I click on the All Tires link
+    And  I get a popup for fitment page and I click on the All Tires link
+    And  I click on Add to cart button on Search Results Page
+    And  I click on View Shopping Cart button on the Add to cart popup
    
 
 Examples:
