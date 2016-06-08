@@ -24,31 +24,21 @@ public class CheckoutWithCCSteps {
 	
 	 @Given("^I open DThomepage$")
 	public void i_open_DThomepage() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-		//driver.get(urlToTest);
-	   // throw new Exception();
+		 //Done by Hooks class
 	}
 	 @Then("^I select \"(.*?)\" from \"(.*?)\" which is dropdown \"(.*?)\"$")
 	 public void i_select_from_which_is_dropdown(String dropDown, String dropDownName, String dropDownOrder) throws Throwable {
-	     // Write code here that turns the phrase above into concrete actions
 		 int dropDownOrderInt = Integer.parseInt(dropDownOrder);
 		 HomePageAction.clickVehicleDropDownListAndSelectFitment(driver, dropDownName, dropDown, dropDownOrderInt);
-	    // throw new Exception();
 	 }
 	 
 	 @And("^I click the Shop for my vehicle Button$")
 	 public void i_click_the_Shop_for_my_vehicle_Button() throws Throwable {
 		 HomePage.clickShopLink();
-	     // Write code here that turns the phrase above into concrete actions
-	     //throw new PendingException();
 	 }
 	 
 	 @When("^I get a popup for fitment page and I click on the All Tires link$")
 	 public void i_click_on_the_All_Tires_link() throws Throwable {
-	     // Write code here that turns the phrase above into concrete actions
-		 //PageFactory.initElements(driver, FitmentResultsPopUpPage.class);
-		 //FitmentResultsPopUpPage.clickAllTiresLink();
-	     //throw new PendingException();
 		 FitmentResultsPopUpAction.clickAllTiresLink(driver);
 	 }
 }
