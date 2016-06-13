@@ -30,7 +30,6 @@ public class WheelsByVehicleAction {
 	
 	public static void clickVehicleDropDownListAndSelectFitment(WebDriver driver, String dropDownListName, String dropDownListValue) throws Exception
     {
-		//LOGGER.info("clickVehicleDropDownListAndSelectFitment Method start");
 		PageFactory.initElements(driver, WheelsByVehiclePage.class);
         BaseUtils.waitForElementVis(3000);
         List<WebElement> dropDownLists = WheelsByVehiclePage.fitmentBoxContainer.findElement(By.className("fitment-box__drivebox")).findElements(By.xpath("div"));
@@ -53,7 +52,6 @@ public class WheelsByVehicleAction {
                 }
         	}
         }
-    	//LOGGER.info("clickVehicleDropDownListAndSelectFitment Method end");
     }
 
 }

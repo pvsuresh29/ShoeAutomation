@@ -17,7 +17,6 @@ public class HomePageAction {
 	
 	public static void clickVehicleDropDownListAndSelectFitment(WebDriver driver, String dropDownListName, String dropDownListValue, int i) throws Exception
     {
-		//LOGGER.info("clickVehicleDropDownListAndSelectFitment Method start");
 		PageFactory.initElements(driver, HomePage.class);
         BaseUtils.waitForElementVis(3000);
         List<WebElement> dropDownLists = HomePage.fitmentComponent.findElements(By.xpath("/html/body/main/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div/form/div[" +i+"]"));
