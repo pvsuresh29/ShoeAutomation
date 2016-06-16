@@ -15,11 +15,11 @@ import com.discount.automation.homepage.pages.HomePage;
 import com.discount.automation.searchresults.action.SearchResultsPageAction;
 import com.discount.utils.Hooks;
 
-public class CheckoutWithCCSteps {
+public class CheckoutSteps {
 	
 	public WebDriver driver;
 	
-	 public CheckoutWithCCSteps()
+	 public CheckoutSteps()
 	    {
 		 driver = Hooks.getDriver();
 	    }
@@ -52,5 +52,11 @@ public class CheckoutWithCCSteps {
 	 @When("^I click on View Shopping Cart button on the Add to cart popup$")
 	 public void clickViewShoppingCart() throws Throwable {
 		 AddToCartPopUpAction.clickViewShoppingCart(driver);
+	 }
+	 
+	 @And("^I clear browser cookies$")
+	 public void closeTheBrowser() throws Throwable {
+		 driver.manage().deleteAllCookies();
+		 //driver.quit();
 	 }
 }
