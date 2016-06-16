@@ -55,7 +55,7 @@ public class CheckoutSteps {
 	 }
 	 
 	 @And("^I clear browser cookies$")
-	 public void closeTheBrowser() throws Throwable {
+	 public void clearCookies() throws Throwable {
 		 driver.manage().deleteAllCookies();
 		 //driver.quit();
 	 }
