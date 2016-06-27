@@ -1,4 +1,4 @@
-package com.discount.utils;
+package com.discount.testUtils;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

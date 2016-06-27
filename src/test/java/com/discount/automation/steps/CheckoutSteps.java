@@ -13,7 +13,7 @@ import com.discount.automation.homepage.action.HomePageAction;
 import com.discount.automation.homepage.pages.FitmentResultsPopUpPage;
 import com.discount.automation.homepage.pages.HomePage;
 import com.discount.automation.searchresults.action.SearchResultsPageAction;
-import com.discount.utils.Hooks;
+import com.discount.testUtils.Hooks;
 
 public class CheckoutSteps {
 	

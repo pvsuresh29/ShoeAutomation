@@ -1,4 +1,4 @@
-package com.discount.utils;
+package com.discount.testUtils;
 
 import org.openqa.selenium.WebDriver;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -19,6 +19,12 @@ public class PropertyFileConfig {
 	         String envURL = service.URLInUse();
 	         return envURL;
       
+		}
+		
+		public String getDTEnvUrl(){
+	         String dtEnvURL = service.DTURLInUse();
+	         return dtEnvURL;
+     
 		}
 		
 	public void ContextClose(){

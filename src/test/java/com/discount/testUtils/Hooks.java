@@ -1,4 +1,4 @@
-package com.discount.utils;
+package com.discount.testUtils;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -16,6 +16,7 @@ public class Hooks {
 	private static WebDriver driver= initDriver.driverInit();
 	public static EnvUrl envURL= new EnvUrl();
 	public static String urlToTest= envURL.getEnvUrl();
+	public static String dtUrlTotest= envURL.getDTEnvUrl();
 	
 	 
 	 
@@ -24,6 +25,14 @@ public class Hooks {
 		 	
 	    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    	driver.get(urlToTest);
+	        return driver;
+	    }
+	 
+	 public static WebDriver getDriverforDT()
+	    {
+		 	
+	    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    	driver.get(dtUrlTotest);
 	        return driver;
 	    }
 	 

@@ -1,4 +1,4 @@
-package com.discount.utils;
+package com.discount.testUtils;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,6 +19,9 @@ public class PropertyFileServiceImpl implements PropertyFileService {
 	
 	@Value("${envUrl}")
 	private  String envUrl;
+	
+	@Value("${dtEnvUrl}")
+	private  String dtEnvUrl;
 
 	
 		
@@ -31,5 +34,9 @@ public class PropertyFileServiceImpl implements PropertyFileService {
 			System.out.println("URL is " + envUrl);
 			return envUrl;
 		}
-
+		
+		public String DTURLInUse(){
+			System.out.println("URL is " + dtEnvUrl);
+			return dtEnvUrl;
+		}
 }

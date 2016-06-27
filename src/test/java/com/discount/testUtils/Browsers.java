@@ -1,4 +1,4 @@
-package com.discount.utils;
+package com.discount.testUtils;
 
 //import com.discount.test.utils.Browsers;
 

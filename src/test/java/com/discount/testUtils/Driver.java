@@ -1,4 +1,4 @@
-package com.discount.utils;
+package com.discount.testUtils;
 import org.openqa.selenium.WebDriver;
 
 

@@ -1,4 +1,4 @@
-package com.discount.utils;
+package com.discount.testUtils;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -13,7 +13,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
-import com.discount.utils.CommonUtils;
+
+import com.discount.testUtils.CommonConstants.RemoteSeleniumServerURL;
 
 public class BrowserFactory  
 {

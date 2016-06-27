@@ -1,4 +1,4 @@
-package com.discount.utils;
+package com.discount.testUtils;
 
 public interface CommonConstants
 {
