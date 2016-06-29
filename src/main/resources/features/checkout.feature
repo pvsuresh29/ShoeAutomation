@@ -17,7 +17,11 @@ Scenario Outline: Checkout with Credit card
     And  I get a popup for fitment page and I click on the All Tires link
     And  I click on Add to cart button on Search Results Page
     And  I click on View Shopping Cart button on the Add to cart popup
-   # And I do the checkout with CC
+    And  I click the checkout Button
+    #And I enter "<FirstName>"  "<LasttName>" "<Address1>" "<Address2>" "<Town>" "<ZipCode>" "<PhoneNumber>" "<Email>"
+    # And I choose "<Country>" from dropdown
+    # And I choose "<State>" from dropdown
+    # And I choose "<Phonetype>" from dropdown
     And  I clear browser cookies
    
 

@@ -12,8 +12,8 @@ import com.discount.utils.BaseUtils;
 
 public class HomePageAction {
 	
-	WebDriver driver;
-	WebElement  el;
+	//	WebDriver driver;
+	//WebElement  el;
 	
 	public static void clickVehicleDropDownListAndSelectFitment(WebDriver driver, String dropDownListName, String dropDownListValue, int i) throws Exception
     {

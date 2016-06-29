@@ -5,12 +5,10 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-
+import com.discount.automation.cart.action.CartAction;
 import com.discount.automation.homepage.action.AddToCartPopUpAction;
 import com.discount.automation.homepage.action.FitmentResultsPopUpAction;
 import com.discount.automation.homepage.action.HomePageAction;
-import com.discount.automation.homepage.pages.FitmentResultsPopUpPage;
 import com.discount.automation.homepage.pages.HomePage;
 import com.discount.automation.searchresults.action.SearchResultsPageAction;
 import com.discount.testUtils.Hooks;
@@ -52,6 +50,11 @@ public class CheckoutSteps {
 	 @When("^I click on View Shopping Cart button on the Add to cart popup$")
 	 public void clickViewShoppingCart() throws Throwable {
 		 AddToCartPopUpAction.clickViewShoppingCart(driver);
+	 }
+	 
+	 @And("^I click the checkout Button$")
+	 public void clickCheckOutButton() throws Throwable {
+		 CartAction.clickCheckOutButton(driver);
 	 }
 	 
 	 @And("^I clear browser cookies$")
