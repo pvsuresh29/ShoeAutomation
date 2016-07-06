@@ -18,10 +18,19 @@ Scenario Outline: Checkout with Credit card
     And  I click on Add to cart button on Search Results Page
     And  I click on View Shopping Cart button on the Add to cart popup
     And  I click the checkout Button
-    #And I enter "<FirstName>"  "<LasttName>" "<Address1>" "<Address2>" "<Town>" "<ZipCode>" "<PhoneNumber>" "<Email>"
-    # And I choose "<Country>" from dropdown
-    # And I choose "<State>" from dropdown
-    # And I choose "<Phonetype>" from dropdown
+    And I enter "<FirstName>"  "<LastName>" "<Address1>" "<Address2>" "<City>" "<ZipCode>" "<PhoneNumber>" "<Email>"
+    And I choose "<Country>" from country dropdown
+    And I choose "<State>" from state dropdown
+    And I choose "<PhoneType>" from Phone dropdown
+    And I click on Next Steps Delivery options button
+    And I click on continue on the verify your address popup
+    And I click on Next Step Payment Button
+    And I enter "<FirstName>" on the Card
+    And I enter "<CreditCard>" number
+    And I select Credit card Expiration
+    And I enter "<CVN>" for CC
+    And I click the Next Step Review button
+    And I click on the Place Order Button
     And  I clear browser cookies
    
 
@@ -29,8 +38,8 @@ Examples:
     # |Year|Make  |Model|Trim      |Assembly			 |YearDropDown|MakeDropdown|ModelDropdow|TrimDropdown|AssemblyDropdown|num1|num2|num3|num4|num5|
     # |2010|Chevrolet|Corvette|Base|255 /50 R18 XL|Year        |Make        |Model       |Trim        |Assembly        |1   |2   |3   |4   |5   |
     
-     |Year|Make  |Model|Trim      |YearDropDown|MakeDropdown|ModelDropdow|TrimDropdown|num1|num2|num3|num4|
-     |2010|Chevrolet|Corvette|Base|Year        |Make        |Model       |Trim |1   |2   |3   |4   |
+     |Year|Make  |Model|Trim      |YearDropDown|MakeDropdown|ModelDropdow|TrimDropdown|num1|num2|num3|num4|FirstName|LastName|Address1|Address2|City|ZipCode|PhoneNumber|Email|Country|State|PhoneType|CreditCard|CVN|
+     |2010|Chevrolet|Corvette|Base|Year        |Make        |Model       |Trim |1   |2   |3   |4   |Sam|Harrison|67 Elwood St|  | Phoenix|85040|666-666-6666|abc@xyz.com|3|5|3|4111111111111111|1234|
      
   
   Scenario Outline: Checkout with Paypal   

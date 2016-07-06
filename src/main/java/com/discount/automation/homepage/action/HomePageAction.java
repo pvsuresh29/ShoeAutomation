@@ -1,12 +1,10 @@
 package com.discount.automation.homepage.action;
 
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import com.discount.automation.fitment.pages.WheelsByVehiclePage;
 import com.discount.automation.homepage.pages.HomePage;
 import com.discount.utils.BaseUtils;
 
@@ -19,7 +17,7 @@ public class HomePageAction {
     {
 		PageFactory.initElements(driver, HomePage.class);
         BaseUtils.waitForElementVis(3000);
-        List<WebElement> dropDownLists = HomePage.fitmentComponent.findElements(By.xpath("/html/body/main/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div/form/div[" +i+"]"));
+        List<WebElement> dropDownLists = HomePage.fitmentComponent.findElements(By.xpath("/html/body/main/div[2]/div[2]/div/div/div[2]/div/div[1]/div/form/div[" +i+"]"));
         loop: for (WebElement dropDownList: dropDownLists)
         { 
         	if (dropDownList.findElement(By.className("Select-placeholder")).getText().equalsIgnoreCase(dropDownListName))
