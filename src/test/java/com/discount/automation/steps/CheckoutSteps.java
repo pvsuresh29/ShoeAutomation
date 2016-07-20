@@ -12,6 +12,9 @@ import com.discount.automation.homepage.action.AddToCartPopUpAction;
 import com.discount.automation.homepage.action.FitmentResultsPopUpAction;
 import com.discount.automation.homepage.action.HomePageAction;
 import com.discount.automation.homepage.pages.HomePage;
+import com.discount.automation.paypal.action.PayPalLoginAction;
+import com.discount.automation.paypal.action.PaypalConfirmationAction;
+import com.discount.automation.paypal.pages.PaypalConfirmationPage;
 import com.discount.automation.searchresults.action.SearchResultsPageAction;
 import com.discount.testUtils.Hooks;
 
@@ -123,6 +126,23 @@ public class CheckoutSteps {
 	 @And("^I click on the Place Order Button$")
 	    public void clickPlaceOrderButton() throws Throwable {
 		 PaymentAndBillingAction.clickPlaceOrderButton(driver);
+	    }
+	 
+	 @Then("^I click on check out with Paypal Button$")
+	    public void clickPaypalCheckoutButton() throws Throwable {
+		 CartAction.clickPaypalCheckOutButton(driver);
+	    }
+
+	 @And("^I enter \"([^\"]*)\" \"([^\"]*)\" and click LogIn$")
+	    public void enterPaypalCredentials(String paypalusername, String paypalpassword) throws Throwable {
+		 PayPalLoginAction.enterPaypalCredentials(driver, paypalusername, paypalpassword);
+		 PayPalLoginAction.clickLoginButton(driver); 
+	    }
+
+	 @And("^I click Continue$")
+	    public void clickContinue() throws Throwable {
+		 PaypalConfirmationAction.clickContinueButton(driver);
+		   
 	    }
 
 	 

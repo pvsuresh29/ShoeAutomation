@@ -12,5 +12,11 @@ public class CartAction {
 		CartPage.checkoutButton.click();
 		
 	}
+	
+	public static void clickPaypalCheckOutButton(WebDriver driver){
+		PageFactory.initElements(driver, CartPage.class);
+		CartPage.paypalCheckoutButton.click();
+		
+	}
 
 }

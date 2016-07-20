@@ -52,14 +52,18 @@ Examples:
     And  I get a popup for fitment page and I click on the All Tires link
     And  I click on Add to cart button on Search Results Page
     And  I click on View Shopping Cart button on the Add to cart popup
-   # And I do the checkout with Paypal
+    Then I click on check out with Paypal Button 
+    And I enter "<PaypalUserName>" "<PaypalPassword>" and click LogIn
+    And I click Continue
+    And I click on the Place Order Button
     And  I clear browser cookies
+    
    
 
 Examples:
     # |Year|Make  |Model|Trim      |Assembly			 |YearDropDown|MakeDropdown|ModelDropdow|TrimDropdown|AssemblyDropdown|num1|num2|num3|num4|num5|
     # |2010|Chevrolet|Corvette|Base|255 /50 R18 XL|Year        |Make        |Model       |Trim        |Assembly        |1   |2   |3   |4   |5   |
     
-     |Year|Make  |Model|Trim      |YearDropDown|MakeDropdown|ModelDropdow|TrimDropdown|num1|num2|num3|num4|
-     |2010|Chevrolet|Corvette|Base|Year        |Make        |Model       |Trim |1   |2   |3   |4   |
+     |Year|Make  |Model|Trim      |YearDropDown|MakeDropdown|ModelDropdow|TrimDropdown|num1|num2|num3|num4|PaypalUserName|PaypalPassword|
+     |2010|Chevrolet|Corvette|Base|Year        |Make        |Model       |Trim |1   |2   |3   |4   |greggu-buyer@Objectivasoftware.com|ZAQ!@WSX|
         

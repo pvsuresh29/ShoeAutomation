@@ -16,5 +16,8 @@ public class CartPage {
 	
 	@FindBy(className="checkWithDefault")
 	public static WebElement checkoutButton;
+	
+	@FindBy(className="checkWithPaypal")
+	public static WebElement paypalCheckoutButton;
 
 }
