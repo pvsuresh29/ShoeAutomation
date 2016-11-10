@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.discount.automation.tests.TestNGExample">
+      <class name="com.shoe.test.RunTest">
         <methods>
-          <include name="close"/>
-          <include name="wheelsFlow"/>
-          <include name="testSetup"/>
+          <include name="testMonthsDataStory1"/>
+          <include name="runBeforeTest"/>
+          <include name="closePage"/>
         </methods>
-      </class> <!-- com.discount.automation.tests.TestNGExample -->
+      </class> <!-- com.shoe.test.RunTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

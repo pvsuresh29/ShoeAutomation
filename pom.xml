@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.discount.automation</groupId>
-  <artifactId>automation_epic</artifactId>
+  <groupId>com.shoe.automation</groupId>
+  <artifactId>automation_shoe</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>automation_epic</name>
+  <name>automation_shoe</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -21,24 +21,6 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
-	<dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-jvm-deps</artifactId>
-            <scope>test</scope>
-            <version>1.0.3</version>
-        </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-picocontainer</artifactId>
-            <version>1.2.2</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>1.2.2</version>
-            <scope>test</scope>
-        </dependency>
 	<dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
@@ -59,6 +41,12 @@
 		<artifactId>spring-context</artifactId>
 		<version>4.2.5.RELEASE</version>
 	</dependency>
+<dependency>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.8</version>
+  <scope>test</scope>
+</dependency>
 
     
   </dependencies>
