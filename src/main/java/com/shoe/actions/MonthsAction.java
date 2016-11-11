@@ -63,7 +63,7 @@ public class MonthsAction {
 					if (x==2){
 							String str=cells.get(0).getText();
 							String price= cells.get(1).getText();
-							if (! str.contains("Price") && price ==null) {
+							if (! str.contains("Price") || price ==null) {
 								System.out.println("Failed for "+ month + str+"="+price);  
 								  temp = false; break;
 								  //System.out.println(str+price);
@@ -72,7 +72,7 @@ public class MonthsAction {
 						if(x==3){
 							String str=cells.get(0).getText();
 							String desc= cells.get(1).getText();
-							if (!str.contains("Description") && desc ==null) {
+							if (!str.contains("Description") || desc ==null) {
 								 System.out.println("Failed for "+ month + str+"="+desc);  
 								temp = false; 
 								  break;
