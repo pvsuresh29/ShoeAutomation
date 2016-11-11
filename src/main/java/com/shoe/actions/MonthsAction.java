@@ -49,7 +49,7 @@ public class MonthsAction {
 		//Assert.assertEquals(MonthsResultsPage.brandTitle.getText(), month+"'s Shoes");
 	}
 	
-	public static void verifyMonthResults(WebDriver driver, String month){
+	public static boolean verifyMonthResults(WebDriver driver, String month){
 		PageFactory.initElements(driver, MonthsResultsPage.class);
 		List <WebElement> le = driver.findElements(By.xpath("//*[@id='shoe_list']/li"));
 		boolean temp= true;
@@ -94,5 +94,7 @@ public class MonthsAction {
 				 }
 		    
 	}
+	
+	return temp;
 	}
 }

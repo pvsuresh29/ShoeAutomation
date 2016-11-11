@@ -79,7 +79,7 @@ public class RunTest {
 			//for (int i=0; i<month.length;i++){
 			 MonthsAction.clickMonthsList(driver, month[12]); 
 			 Assert.assertEquals(MonthsResultsPage.brandTitle.getText(), month[12]+"'s Shoes");
-			 MonthsAction.verifyMonthResults(driver, month[10]);
+			 Assert.assertEquals (true,MonthsAction.verifyMonthResults(driver, month[10]));
 			//}
 		
 		 }
