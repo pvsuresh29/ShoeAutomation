@@ -19,7 +19,7 @@ Feature: Compare multiple products
 
     Examples:
       | Year | Make  | Model | Trim     | Assembly | FitmentOption | Quantity |
-      | 2012 | Honda | Civic | Coupe DX | none     | All Tires     | 3        |
+      |  | Honda |  |  | none     | All Tires     | 3        |
 
 
   #TC 2 - Remove and re-add product from compare page
@@ -39,7 +39,7 @@ Feature: Compare multiple products
 
     Examples:
       |Year |Make  |Model |Trim     |Assembly |FitmentOption |Quantity|ItemCode |
-      |2012 |Honda |Civic |Coupe DX |none     |All Tires     |3       |29935    |
+      | |Honda | | |none     |All Tires     |3       |    |
 
 
   #TC 3 - Modify selection updated on Compare Products page (click x on item, click Add an Item button)

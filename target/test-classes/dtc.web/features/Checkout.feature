@@ -74,9 +74,9 @@ Feature: Display the Availability Status of Products (Relative Inventory)
 
     Examples:
       |SearchTerm |ProductName      |Checkout |Customer            |
-      |34302      |PBX A/T HARDCORE |default  |default_customer_oh |
-      |34302      |PBX A/T HARDCORE |default  |default_customer_la |
-      |34302      |PBX A/T HARDCORE |default  |default_customer_tx |
+      |1      |P  |default  |a |
+      | 2     |R  |default  |b |
+      |  3    |S  |default  |c |
 
   @bba
   @checkoutPaypalViaHomepageKeywordSearch
@@ -97,5 +97,6 @@ Feature: Display the Availability Status of Products (Relative Inventory)
     And I confirm that fees are listed on the "order" page
 
     Examples:
-      |SearchTerm |ProductName      |Checkout |Customer           |
-      |34302      |PBX A/T HARDCORE |paypal   |paypal_customer_az |
+    |SearchTerm |ProductName      |Checkout |Customer            |
+      |1      |P  |default  |a |
+

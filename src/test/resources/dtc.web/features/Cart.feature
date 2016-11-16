@@ -20,5 +20,5 @@ Feature: Display the Availability Status of Products (Relative Inventory)
 
     Examples:
     |Year |Make  |Model|Trim |Assembly |FitmentOption |ItemCode |Tip Container     |
-    |2015 |Acura |ILX  |2.0L |none     |All Tires     |43563    |TPMS Rebuild Kits |
-    #TODO: This data is only available on staging!!
+    | |Acura |  | |none     |All Tires     |    |Test |
+    #TODO: This data is only available on QA
