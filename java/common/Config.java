@@ -89,6 +89,6 @@ public class Config {
     public static String getSaucelabsUrl() {
         String USERNAME = System.getenv("SAUCE_USER");
         String ACCESS_KEY = System.getenv("SAUCE_KEY");
-        return "http://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:80/wd/hub";
+        return "http://" + USERNAME + ":" + ACCESS_KEY + "saucelabs";
     }
 }
