@@ -130,12 +130,12 @@ public class Customer {
             case PAYPAL_CUSTOMER_AZ:
                 customer.paypalUser = paypalUser;
                 customer.paypalPass = paypalPass;
-                customer.paypalAddress = "20225 N. Scottsdale, Scottsdale, AZ 85255";
+                customer.paypalAddress = "20225";
                 break;
             case PAYPAL_CUSTOMER_OH:
                 customer.paypalUser = paypalUser;
                 customer.paypalPass = paypalPass;
-                customer.paypalAddress = "10813 Bellaire Rd, Cleveland, OH 44111";
+                customer.paypalAddress = "10813 ";
                 break;
         }
         return customer;
