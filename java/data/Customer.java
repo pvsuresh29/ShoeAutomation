@@ -15,10 +15,10 @@ public class Customer {
     public String zip;
     public String phone;
     public String phoneType;
-    public String email = "mandana.nabizadeh@discounttire.com";
-    public String ccNum = "4111111111111111";
+    public String email = "Test@discounttire.com";
+    public String ccNum = "00000";
     public String cvn = "1234";
-    public String paypalUser = "Robin_Test@discounttireco.com";
+    public String paypalUser = "Test@discounttireco.com";
     public String paypalPass = "dtctest1";
     public String paypalAddress;
 
