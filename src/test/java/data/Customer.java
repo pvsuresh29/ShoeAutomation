@@ -15,11 +15,11 @@ public class Customer {
     public String zip;
     public String phone;
     public String phoneType;
-    public String email = "mandana.nabizadeh@discounttire.com";
-    public String ccNum = "4111111111111111";
+    public String email = "T@e.com";
+    public String ccNum = "411";
     public String cvn = "1234";
-    public String paypalUser = "Robin_Test@discounttireco.com";
-    public String paypalPass = "dtctest1";
+    public String paypalUser = "Tst@tireco.com";
+    public String paypalPass = "dtc1";
     public String paypalAddress;
 
     private enum CustomerType {
@@ -53,8 +53,8 @@ public class Customer {
 
         switch(customerType) {
             case DEFAULT_CUSTOMER_AZ:
-                customer.firstName = "Sam";
-                customer.lastName = "Harrison";
+            	 customer.firstName = "TEST";
+                 customer.lastName = "TEST";
                 customer.address1 = "E 67 Elwood St";
                 customer.address2 = "";
                 customer.country = "United States";
@@ -68,8 +68,8 @@ public class Customer {
                 customer.cvn = cvn;
                 break;
             case DEFAULT_CUSTOMER_FL:
-                customer.firstName = "John";
-                customer.lastName = "Randal";
+            	 customer.firstName = "TEST";
+                 customer.lastName = "TEST";
                 customer.address1 = "3700 E Fiske Blvd";
                 customer.address2 = "";
                 customer.country = "United States";
@@ -83,8 +83,8 @@ public class Customer {
                 customer.cvn = cvn;
                 break;
             case DEFAULT_CUSTOMER_LA:
-                customer.firstName = "Sam";
-                customer.lastName = "Bradford";
+            	 customer.firstName = "TEST";
+                 customer.lastName = "TEST";
                 customer.address1 = "2018 Ambassador Caffery Pkwy";
                 customer.address2 = "";
                 customer.country = "United States";
@@ -98,8 +98,8 @@ public class Customer {
                 customer.cvn = cvn;
                 break;
             case DEFAULT_CUSTOMER_OH:
-                customer.firstName = "Terry";
-                customer.lastName = "Bridgewater";
+            	 customer.firstName = "TEST";
+                 customer.lastName = "TEST";
                 customer.address1 = "1421 Saint Clair Ave NE";
                 customer.address2 = "";
                 customer.country = "United States";
@@ -113,8 +113,8 @@ public class Customer {
                 customer.cvn = cvn;
                 break;
             case DEFAULT_CUSTOMER_TX:
-                customer.firstName = "Stefon";
-                customer.lastName = "Diggs";
+                customer.firstName = "TEST";
+                customer.lastName = "TEST";
                 customer.address1 = "3301 Palmer Hwy";
                 customer.address2 = "";
                 customer.country = "United States";
@@ -130,12 +130,12 @@ public class Customer {
             case PAYPAL_CUSTOMER_AZ:
                 customer.paypalUser = paypalUser;
                 customer.paypalPass = paypalPass;
-                customer.paypalAddress = "20225 N. Scottsdale, Scottsdale, AZ 85255";
+                customer.paypalAddress = "20225 ";
                 break;
             case PAYPAL_CUSTOMER_OH:
                 customer.paypalUser = paypalUser;
                 customer.paypalPass = paypalPass;
-                customer.paypalAddress = "10813 Bellaire Rd, Cleveland, OH 44111";
+                customer.paypalAddress = "10813 ";
                 break;
         }
         return customer;
