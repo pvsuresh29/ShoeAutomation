@@ -34,10 +34,10 @@ public class Constants {
     public static final String IE_BROWSER = "IE";
     public static final String SAFARI_BROWSER = "SAFARI";
 
-    public static final String IE_REMOTE = "http://10.0.157.58:7777/wd/hub";
-    public static final String CHROME_REMOTE = "http://10.0.157.58:7777/wd/hub";//"http://10.0.175.241:6666/wd/hub";
-    public static final String FIREFOX_REMOTE = "http://10.0.175.153:5555/wd/hub ";
-    public static final String SAFARI_REMOTE = "http://10.0.177.38:4444/wd/hub";
+    public static final String IE_REMOTE = "http://URL";
+    public static final String CHROME_REMOTE = "http:URL";//removed URLS;
+    public static final String FIREFOX_REMOTE = "http:URL ";
+    public static final String SAFARI_REMOTE = "http:URL";
 
     public static final String DTD = "dtd";
     public static final String DT = "dt";
