@@ -41,7 +41,6 @@
 		<artifactId>spring-context</artifactId>
 		<version>4.2.5.RELEASE</version>
 	</dependency>
-<!--      <test></test>--> uyweuywuyeuwyueywuu
 <dependency>
   <groupId>org.testng</groupId>
   <artifactId>testng</artifactId>
